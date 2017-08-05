@@ -1,0 +1,236 @@
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #1a212b;
+    color: #fff;
+    padding-top: 120px;
+    /* Was 70px */
+    padding-top: 12rem;
+    /* Was 7rem */
+    font-family: 'museo_sans300', sans-serif;
+    font-size: 100%;
+}
+
+a {
+    color: #f9260e;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+a.brand:hover {
+    border-bottom: 2px solid transparent;
+}
+
+
+.container {}
+
+.brand,
+.nav-primary {
+    display: inline-block;
+}
+
+.brand {}
+
+.nav-primary {}
+
+/* Typographic Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'museo_slab700';
+    color: #fff;
+}
+
+h2 {
+    font-family: 'museo_sans300', sans-serif;
+}
+
+.h3,
+h3 {
+    font-size: 1rem;
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+}
+
+.event h4 {
+    font-size: 1.25rem;
+}
+
+
+/* General Styles */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border-top: 3px solid rgba(0, 0, 0, .1);
+}
+
+
+/* Footer Styles */
+
+
+footer .container {
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.subfooter {
+    margin: 0;
+    padding: 0.5em;
+}
+
+/* Structure Styles */
+
+.col-sm-4 {
+    background: #333;
+}
+
+
+.container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.textwidget p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+/* Home page styles */
+
+.sticky {
+    background: #1a212b;
+}
+
+.featured-image {
+    margin-bottom: 1em;
+}
+
+.date {
+    display: block;
+    margin-bottom: 1em;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+
+/* Header Styles */
+.banner {
+/* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    background: #1a212b;
+}
+
+.container {}
+
+nav {}
+
+.nav {
+    padding: 1em;
+}
+
+.menu-item {
+    padding: 1em;
+    display: inline-block;
+}
+
+.post {
+    padding: 1em;
+    margin: 1em 0;
+}
+
+
+
+
+/* bootstrap over rides */
+
+.content-info {
+    background: #222 url(../../assets/images/street-banners/rotator.php) no-repeat 85% 100%;
+    padding: 5em;
+}
+
+
+.tag {
+    display: block;
+    padding: 12rem 0 0 0 0;
+    font-size: 100%;
+    font-weight: 300;
+    text-align: left;
+    white-space: normal;
+    vertical-align: baseline;
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+/* Single Post, Event & Archive Styles */
+
+.info {
+    font-size: 0.8em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+}
+
+.single-post .entry-title, .single-event .entry-title {
+    margin-bottom: 0.5em;
+}
+.single-post .entry-content, .single-event .entry-content {
+    margin-bottom: 5em;
+}
+
+.single-post article, .single-event article {margin-bottom: 5em;}
+
+.single-event h1 {margin-bottom: 0.25rem;} 
+.single-event h2 {margin-bottom: 0.5rem;} 
+.single-event .excerpt, .archive .excerpt {font-size: 1.5rem;  margin: 1rem 0;}
+
+.archive .business, .archive .event, .archive .post {margin-bottom: 5em;}
+.home .entry-summary, .archive .entry-summary {margin-bottom: 0.5em;}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+    .brand,
+    .nav-primary {
+        display: block;
+    }
+    .brand,
+    .nav-primary {
+        text-align: center;
+    }
+}
